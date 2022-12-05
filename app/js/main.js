@@ -1,7 +1,9 @@
 $(function () {
+  $('.header__slider-list').slick({
+    fade: true,
 
-  $('.class-name').slick({
-
+    prevArrow: '<button class="slick-btn slick-prev"><svg class="slider-arrow" width="22px" height="22px"><use xlink:href="images/svg-sprite/sprite.svg#angle-left"></use></svg></button>',
+    nextArrow: '<button class="slick-btn slick-next"><svg class="slider-arrow" width="22px" height="22px"><use xlink:href="images/svg-sprite/sprite.svg#angle-right"></use></svg></button>'
   });
 
 
@@ -21,4 +23,22 @@ $(function () {
     $('.menu__list, .menu__btn').toggleClass('active');
     $('body').toggleClass('lock'); // ! No scroll
   });
+
+  $('.header__search-toggle').on('click', function () {
+    $('.header__form').toggleClass('active');
+  });
+
+
+  wow = new WOW(
+    {
+      boxClass: 'wow',      // default
+      animateClass: 'animate__animated', // default
+      offset: 0,          // default
+      mobile: true,       // default
+      live: true,        // default
+      delay: 5000
+    }
+  );
+
+  wow.init();
 });

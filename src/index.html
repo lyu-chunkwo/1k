@@ -7,31 +7,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="favicon.png" type="image/x-icon" />
   <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
-  <title>New GULP project</title>
+  <title>Первый жилищный кооператив</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="scroll">
 
-  <header class="header">
-    <div class="container">
-      @include('partials/header.html')
-    </div>
-  </header>
+  @include('partials/header.html')
 
   <main class="main">
-    <div class="container">
+    @include('partials/programs.html')
+    @include('partials/about.html')
 
-    </div>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      @include('partials/footer.html')
-    </div>
-  </footer>
+  @include('partials/footer.html')
 
 
+  <script src="js/calc.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 
