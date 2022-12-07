@@ -1,0 +1,43 @@
+.partners {
+  padding-bottom: 70px;
+
+  &__title {
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid $border;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 70px;
+      height: 1px;
+      background-color: $accent;
+      left: 0;
+      bottom: 0;
+    }
+  }
+
+  &__img {
+    border: 1px solid $border;
+  }
+
+  .slick-btn {
+    position: absolute;
+    right: 0;
+    top: -88px;
+    background-color: transparent;
+    border: 1px solid $border;
+    padding-top: 6px;
+    z-index: 5;
+    cursor: pointer;
+  }
+
+  .slick-prev {
+    right: 50px;
+  }
+
+  .slider-arrow {
+    fill: #ababab;
+  }
+}

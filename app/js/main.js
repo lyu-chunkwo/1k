@@ -14,7 +14,7 @@ $(function () {
     variableWidth: true,
     autoplay: true,
 
-    prevArrow: '<button class="slick-btn slick-prev"><svg class="slider-arrow" width="22px" height="22px"><use xlink:href="images/svg-sprite/sprite.svg#angle-left"></use></svg></button>',
+    prevArrow: '<button class="slick-btn slick-prev"><svg class="slider-arrow" width="15px" height="15px"><use xlink:href="images/svg-sprite/sprite.svg#angle-left"></use></svg></button>',
     nextArrow: '<button class="slick-btn slick-next"><svg class="slider-arrow" width="22px" height="22px"><use xlink:href="images/svg-sprite/sprite.svg#angle-right"></use></svg></button>'
   });
 
@@ -23,6 +23,16 @@ $(function () {
     arrows: false,
     autoplay: true,
     dots: true
+  });
+
+
+  $('.partners__list').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+
+    prevArrow: '<button class="slick-btn slick-prev"><svg class="slider-arrow" width="22px" height="22px"><use xlink:href="images/svg-sprite/sprite.svg#angle-left"></use></svg></button>',
+    nextArrow: '<button class="slick-btn slick-next"><svg class="slider-arrow" width="22px" height="22px"><use xlink:href="images/svg-sprite/sprite.svg#angle-right"></use></svg></button>'
   });
 
 
@@ -55,12 +65,6 @@ $(function () {
   $('.header__search-toggle').on('click', function () {
     $('.header__form').toggleClass('active');
   });
-
-  const youtubeLink = document.querySelector('.reviews__text-box'),
-    result = youtubeLink.lastElementChild;
-
-  console.log(result);
-  // youtubeLink.style.cssText = 'display: none;';
 
 
   wow = new WOW(

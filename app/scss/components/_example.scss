@@ -1,0 +1,143 @@
+.example {
+  padding-bottom: 100px;
+
+  &__top {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
+    }
+
+    &::before {
+      width: 200px;
+      height: 1px;
+      background-color: $border;
+    }
+
+    &::after {
+      width: 70px;
+      height: 1px;
+      background-color: $accent;
+    }
+  }
+
+  &__top-text {
+    font-size: 18px;
+    color: #848484;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    max-width: 370px;
+
+    &:hover {
+      .example__overlay {
+        transform: perspective(400px) rotateX(0deg);
+        opacity: 1;
+      }
+    }
+  }
+
+  &__img-box {
+    position: relative;
+    margin-bottom: -40px;
+    z-index: 0;
+  }
+
+  &__img {
+    max-width: 370px;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  &__overlay {
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    max-width: 370px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(209, 19, 23, 0.69);
+    transform: perspective(400px) rotateX(-90deg);
+    opacity: 0;
+    transform-origin: top;
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__text-span {
+    display: block;
+    padding-top: 25px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 15px;
+      background-image: url(../images/svg-sprite/sprite.svg#home);
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__num-span {
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  &__descr-box {
+    max-width: 330px;
+    margin: 0 auto;
+    padding: 20px 15px 15px;
+    border: 1px solid $border;
+    border-top: 3px solid $accent;
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+    margin-bottom: 50px;
+  }
+
+  &__descr-title {
+    text-align: center;
+    font-size: 20px;
+    color: #222;
+    margin-bottom: 10px;
+  }
+
+  &__descr-item {
+    margin-bottom: 10px;
+    padding-bottom: 2px;
+    border-bottom: 1px dashed $border;
+  }
+
+  &__questions-box {
+    text-align: center;
+  }
+
+  &__questions-text {
+    margin-bottom: 25px;
+  }
+}
