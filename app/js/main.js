@@ -7,6 +7,34 @@ $(function () {
   });
 
 
+  $('.advantage__slider').slick({
+    fade: false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    variableWidth: true,
+    autoplay: true,
+
+    prevArrow: '<button class="slick-btn slick-prev"><svg class="slider-arrow" width="22px" height="22px"><use xlink:href="images/svg-sprite/sprite.svg#angle-left"></use></svg></button>',
+    nextArrow: '<button class="slick-btn slick-next"><svg class="slider-arrow" width="22px" height="22px"><use xlink:href="images/svg-sprite/sprite.svg#angle-right"></use></svg></button>'
+  });
+
+
+  $('.terms__slider').slick({
+    arrows: false,
+    autoplay: true,
+    dots: true
+  });
+
+
+  $(".accordion__content").css("display", "none");
+  $(".accordion__title-box").click(function () {
+    $(".accordion__title-box").not(this).removeClass("open");
+    $(".accordion__title-box").not(this).next().slideUp(300);
+    $(this).toggleClass("open");
+    $(this).next().slideToggle(300);
+  });
+
+
   $(document).scroll(function () {
     var scrollTop = $(window).scrollTop();
     console.log(scrollTop);
@@ -27,6 +55,12 @@ $(function () {
   $('.header__search-toggle').on('click', function () {
     $('.header__form').toggleClass('active');
   });
+
+  const youtubeLink = document.querySelector('.reviews__text-box'),
+    result = youtubeLink.lastElementChild;
+
+  console.log(result);
+  // youtubeLink.style.cssText = 'display: none;';
 
 
   wow = new WOW(

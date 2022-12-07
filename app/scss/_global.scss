@@ -95,3 +95,25 @@ textarea {
     border: 1px solid yellowgreen;
   }
 }
+
+.button {
+  display: inline-block;
+  padding: 14px 36px;
+  background-color: $accent;
+  border: 2px solid $accent;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: background-color 0.5s, color 0.5s ease 0s;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    background-color: transparent;
+    color: $accent;
+  }
+}
