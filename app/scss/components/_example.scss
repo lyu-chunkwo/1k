@@ -40,11 +40,14 @@
 
   &__items {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 -15px;
   }
 
   &__item {
     max-width: 370px;
+    margin: 0 15px;
 
     &:hover {
       .example__overlay {
@@ -58,11 +61,10 @@
     position: relative;
     margin-bottom: -40px;
     z-index: 0;
+    max-width: 370px;
   }
 
   &__img {
-    max-width: 370px;
-    height: 250px;
     object-fit: cover;
   }
 

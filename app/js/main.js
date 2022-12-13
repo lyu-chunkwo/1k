@@ -2,20 +2,55 @@ $(function () {
   $('.header__slider-list').slick({
     fade: true,
 
+    responsive: [
+      {
+        breakpoint: 1123,
+        settings: {
+          dots: true,
+          arrows: false
+        }
+      }
+    ],
+
     prevArrow: '<button class="slick-btn slick-prev"><svg class="slider-arrow" width="22px" height="22px"><use xlink:href="images/svg-sprite/sprite.svg#angle-left"></use></svg></button>',
     nextArrow: '<button class="slick-btn slick-next"><svg class="slider-arrow" width="22px" height="22px"><use xlink:href="images/svg-sprite/sprite.svg#angle-right"></use></svg></button>'
   });
 
 
   $('.advantage__slider').slick({
-    fade: false,
     slidesToShow: 4,
     slidesToScroll: 1,
-    variableWidth: true,
     autoplay: true,
 
+    responsive: [
+      {
+        breakpoint: 1123,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+
+      {
+        breakpoint: 867,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+          dots: true
+        }
+      },
+
+      {
+        breakpoint: 589,
+        settings: {
+          arrows: false,
+          dots: true,
+          slidesToShow: 1
+        }
+      }
+    ],
+
     prevArrow: '<button class="slick-btn slick-prev"><svg class="slider-arrow" width="15px" height="15px"><use xlink:href="images/svg-sprite/sprite.svg#angle-left"></use></svg></button>',
-    nextArrow: '<button class="slick-btn slick-next"><svg class="slider-arrow" width="22px" height="22px"><use xlink:href="images/svg-sprite/sprite.svg#angle-right"></use></svg></button>'
+    nextArrow: '<button class="slick-btn slick-next"><svg class="slider-arrow" width="15px" height="15px"><use xlink:href="images/svg-sprite/sprite.svg#angle-right"></use></svg></button>'
   });
 
 
@@ -31,8 +66,31 @@ $(function () {
     slidesToScroll: 1,
     autoplay: true,
 
-    prevArrow: '<button class="slick-btn slick-prev"><svg class="slider-arrow" width="22px" height="22px"><use xlink:href="images/svg-sprite/sprite.svg#angle-left"></use></svg></button>',
-    nextArrow: '<button class="slick-btn slick-next"><svg class="slider-arrow" width="22px" height="22px"><use xlink:href="images/svg-sprite/sprite.svg#angle-right"></use></svg></button>'
+    responsive: [
+      {
+        breakpoint: 1125,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+
+      {
+        breakpoint: 720,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+
+      {
+        breakpoint: 478,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ],
+
+    prevArrow: '<button class="slick-btn slick-prev"><svg class="slider-arrow" width="15px" height="15px"><use xlink:href="images/svg-sprite/sprite.svg#angle-left"></use></svg></button>',
+    nextArrow: '<button class="slick-btn slick-next"><svg class="slider-arrow" width="15px" height="15px"><use xlink:href="images/svg-sprite/sprite.svg#angle-right"></use></svg></button>'
   });
 
 
@@ -48,7 +106,19 @@ $(function () {
   $(document).scroll(function () {
     var scrollTop = $(window).scrollTop();
     console.log(scrollTop);
-    if (scrollTop >= 450) {
+    if (scrollTop >= 50) {
+      $('.header__nav-wrapper').addClass("fixed");
+    }
+    else {
+      $('.header__nav-wrapper').removeClass("fixed");
+    }
+  });
+
+
+  $(document).scroll(function () {
+    var scrollTop = $(window).scrollTop();
+    console.log(scrollTop);
+    if (scrollTop >= 750) {
       $('.scroll').addClass("active");
     }
     else {
@@ -57,8 +127,8 @@ $(function () {
   });
 
 
-  $('.menu__btn').on('click', function () {
-    $('.menu__list, .menu__btn').toggleClass('active');
+  $('.header__mobile-btn').on('click', function () {
+    $('.header__menu-list, .header__mobile-btn').toggleClass('active');
     $('body').toggleClass('lock'); // ! No scroll
   });
 

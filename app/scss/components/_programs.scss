@@ -34,7 +34,9 @@
 
   &__items {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 -14px;
   }
 
   &__item {
@@ -42,6 +44,7 @@
     width: 100%;
     position: relative;
     overflow: hidden;
+    margin: 0 14px;
 
     &:hover .programs__hidden {
       transform: translate(0);
@@ -90,7 +93,7 @@
     position: absolute;
     top: 0;
     transition: all 0.5s;
-    transform: translateY(-106%);
+    transform: translateY(-120%);
     font-size: 13px;
   }
 

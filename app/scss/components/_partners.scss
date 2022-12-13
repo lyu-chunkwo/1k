@@ -18,19 +18,40 @@
     }
   }
 
+  &__img-box {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
   &__img {
+    height: 100%;
+    margin: auto;
     border: 1px solid $border;
   }
 
   .slick-btn {
     position: absolute;
     right: 0;
-    top: -88px;
+    top: -85px;
     background-color: transparent;
-    border: 1px solid $border;
+    border: 2px solid $border;
     padding-top: 6px;
     z-index: 5;
     cursor: pointer;
+    width: 35px;
+    height: 35px;
+    transition: border-color 0.5s ease 0s;
+
+    &:hover {
+      border-color: $accent;
+
+      .slider-arrow {
+        fill: $accent;
+      }
+    }
   }
 
   .slick-prev {
@@ -39,5 +60,6 @@
 
   .slider-arrow {
     fill: #ababab;
+    transition: fill 0.5s ease 0s;
   }
 }

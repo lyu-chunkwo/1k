@@ -1,0 +1,493 @@
+@media (max-width: 1198px) {
+  // ! Programs
+  .programs__item {
+    margin-bottom: 20px;
+  }
+
+  // ! about
+  .about__content {
+    display: block;
+    max-width: 570px;
+    margin: 0 auto;
+  }
+
+  .about__promotion-item {
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .about__content-img {
+    margin-bottom: 20px;
+  }
+
+  .about__text-box {
+    margin-bottom: 70px;
+  }
+
+  //! reviews
+  .reviews__item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .reviews__text-box {
+    margin-bottom: 20px;
+  }
+
+  //! connect
+  .connect__contacts-box {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  //! footer
+  .footer__items {
+    display: block;
+  }
+
+  .footer__item {
+    max-width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+    &:last-child {
+      margin-bottom: 0;
+      border: none;
+    }
+  }
+}
+
+@media (max-width: 1122px) {
+  // ! header
+  .header__mobile-btn {
+    display: flex;
+  }
+
+  .header__menu-list {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 80px;
+    width: 100%;
+    height: 100vh;
+    background-color: $accent;
+    border-top: 1px solid #fff;
+    padding-top: 20px;
+    z-index: 55;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease 0s;
+
+    &.active {
+      transform: translateX(0%);
+    }
+  }
+
+  .header__menu-item {
+    padding-top: 0;
+  }
+
+  .header__menu-link {
+    color: #fff;
+    padding: 10px 0;
+  }
+
+  .header__arrow {
+    display: none;
+  }
+
+  .header__submenu {
+    visibility: visible;
+    opacity: 1;
+    position: static;
+  }
+
+  .header__submenu-box {
+    background-color: transparent;
+  }
+
+  .header__submenu-link {
+    color: #fff;
+    padding-top: 0;
+    padding-left: 20px;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  .header__left {
+    justify-content: space-between;
+  }
+
+  .header__top {
+    display: none;
+  }
+
+  .header__nav-wrapper {
+    top: 0;
+  }
+
+  // ! Programs
+  .programs {
+    padding: 50px 0;
+  }
+  //! about
+  .about {
+    padding: 50px 0;
+  }
+
+  //! Advantage
+  .advantage {
+    padding: 50px 0;
+  }
+
+  //! faq
+  .faq {
+    padding: 50px 0;
+  }
+  .accordion {
+    display: block;
+  }
+
+  .accordion__container {
+    max-width: 100%;
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  //!reviews
+  .reviews {
+    padding: 50px 0;
+  }
+
+  .reviews__item {
+    margin-bottom: 0;
+  }
+
+  //! example
+  .example {
+    padding-bottom: 50px;
+  }
+
+  //! partners
+  .partners {
+    padding-bottom: 50px;
+  }
+
+  //! connect
+  .connect {
+    padding: 50px 0;
+  }
+
+  //! footer
+  .footer__basic-content {
+    padding: 50px 0;
+  }
+
+  .up {
+    display: none;
+  }
+
+  .footer__bottom-inner {
+    display: block;
+    text-align: center;
+  }
+
+  .footer__copy-box {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 864px) {
+  // ! header
+  .header__slider-title {
+    font-size: 48px;
+  }
+
+  .popup {
+    padding-top: 50px;
+  }
+
+  .popup__close {
+    top: 0;
+    right: 0;
+  }
+
+  .popup__inputs-fillable {
+    flex-direction: column;
+  }
+
+  .popup__request-form {
+    &--top {
+      margin-bottom: 20px;
+    }
+  }
+
+  // ! partners
+  .partners .slick-btn {
+    top: -100px;
+  }
+
+  //! connect
+  .connect__form-wrap {
+    max-width: 100%;
+  }
+
+  .connect__form-box {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .connect__input {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 634px) {
+  .advantage__btn-box {
+    display: block;
+  }
+
+  .advantage__btn {
+    margin-bottom: 20px;
+    margin-right: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 584px) {
+  // ! header
+  .popup {
+    padding-top: 70px;
+  }
+  .popup__title {
+    font-size: 24px;
+  }
+
+  .popup__inputs-result {
+    flex-direction: column;
+  }
+
+  .popup__input-wrap {
+    margin-bottom: 5px;
+  }
+
+  // ! Programs
+
+  .programs {
+    padding: 30px 0;
+  }
+
+  .programs__title {
+    font-size: 26px;
+  }
+
+  .programs__hidden {
+    display: none;
+  }
+
+  .programs__text {
+    font-size: 14px;
+  }
+
+  // ! about
+  .about {
+    padding: 30px 0;
+  }
+
+  .about__title {
+    font-size: 26px;
+  }
+
+  .about__text-box {
+    margin-bottom: 20px;
+  }
+
+  .about__stamp-box {
+    display: none;
+  }
+
+  //! advantage
+  .advantage {
+    padding: 30px;
+  }
+
+  .advantage__title {
+    font-size: 26px;
+  }
+
+  //! terms
+  .terms__content-text {
+    font-size: 24px;
+  }
+
+  //! faq
+  .faq {
+    padding: 30px 0;
+  }
+
+  .faq__title {
+    font-size: 26px;
+  }
+
+  //! reviews
+  .reviews {
+    padding: 30px 0;
+  }
+
+  .reviews__title {
+    font-size: 26px;
+  }
+
+  .reviews__text {
+    font-size: 14px;
+  }
+
+  //! example
+  .example {
+    padding-bottom: 30px;
+  }
+
+  .example__title {
+    font-size: 26px;
+  }
+
+  //! partners
+  .partners {
+    padding-bottom: 30px;
+  }
+
+  //! connect
+  .connect {
+    padding: 30px 0;
+  }
+
+  .connect__form-title {
+    font-size: 26px;
+  }
+
+  //! footer
+  .footer__basic-content {
+    padding: 30px 0;
+  }
+}
+
+@media (max-width: 500px) {
+  // ! header
+  .header__slider-list {
+    height: 700px;
+  }
+
+  .header__slider-title {
+    font-size: 40px;
+  }
+
+  .header__right {
+    display: none;
+  }
+
+  // ! Programs
+  .programs__title {
+    padding-top: 50px;
+  }
+
+  //! faq
+  .accordion__title {
+    font-size: 12px;
+  }
+
+  .accordion__content {
+    font-size: 12px;
+  }
+
+  .faq__questions-text {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .faq__btn-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .faq__btn {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 408px) {
+  // ! header
+  .header__slider-title {
+    font-size: 32px;
+  }
+
+  .header__slider-text {
+    font-size: 16px;
+  }
+
+  .header__slider-buttons {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .header__btn {
+    display: block;
+  }
+
+  .header__slider-link {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+
+  // ! terms
+  .terms__content-text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 486px) {
+  .programs__bottom-title {
+    font-size: 16px;
+  }
+
+  .programs__bottom-text {
+    font-size: 11px;
+  }
+
+  .programs__bottom {
+    padding: 10px 10px 10px 5px;
+  }
+
+  .programs__bottom-logo {
+    margin-right: 10px;
+  }
+
+  .programs__bottom-textbox {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 342px) {
+  .programs__bottom-title {
+    font-size: 14px;
+  }
+
+  .advantage__btn {
+    padding: 14px 20px;
+  }
+}

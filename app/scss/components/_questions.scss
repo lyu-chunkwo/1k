@@ -54,6 +54,11 @@
     padding: 0 20px;
     border: 1px solid #e6e6e6;
     background-color: #fff;
+    margin-right: 15px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   &__title-box {
@@ -95,6 +100,21 @@
         }
       }
     }
+
+    &:hover {
+      &::before {
+        border-color: $accent;
+      }
+
+      .accordion__title {
+        color: $accent;
+
+        &::before,
+        &::after {
+          background-color: $accent;
+        }
+      }
+    }
   }
 
   &__title {
@@ -113,7 +133,7 @@
       left: 8px;
       top: 50%;
       transform: translateY(-50%);
-      transition: transform 0.5s ease 0s;
+      transition: transform 0.5s, background-color 0.5s ease 0s;
     }
 
     &::after {

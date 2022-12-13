@@ -117,3 +117,38 @@ textarea {
     color: $accent;
   }
 }
+
+.map {
+  max-height: 400px;
+}
+
+.up {
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+  width: 45px;
+  height: 45px;
+  border: 1px solid #9c0e11;
+  padding: 7px;
+  transition: all 0.8s ease 0s;
+  visibility: hidden;
+  opacity: 0;
+
+  &:hover {
+    background-color: #9c0e11;
+
+    .up__svg {
+      fill: #fff;
+    }
+  }
+
+  &__svg {
+    fill: #9c0e11;
+    transition: fill 0.8s ease 0s;
+  }
+}
+
+.scroll.active .up {
+  visibility: visible;
+  opacity: 1;
+}

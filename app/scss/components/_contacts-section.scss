@@ -5,13 +5,19 @@
 
   &__wrap {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 -15px;
   }
 
   &__contacts-box {
     max-width: 370px;
     background-color: #2b2b2b;
     padding: 30px;
+  }
+
+  &__box-item {
+    margin: 0 15px;
   }
 
   &__titles {
