@@ -1,0 +1,133 @@
+.welcome {
+  padding: 70px 0;
+
+  &__title {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 40px;
+    padding-bottom: 15px;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+    }
+
+    &::before {
+      width: 200px;
+      height: 1px;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: $border;
+    }
+
+    &::after {
+      width: 70px;
+      height: 1px;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: $accent;
+    }
+  }
+
+  &__top-content {
+    margin-bottom: 75px;
+  }
+
+  &__img-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  &__img {
+    width: 570px;
+    height: 395px;
+    object-fit: cover;
+  }
+
+  &__text-item {
+    max-width: 570px;
+  }
+
+  &__text-wrap {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__text-title {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: #222;
+
+    &--accent {
+      color: $accent;
+    }
+  }
+
+  &__text {
+    p {
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__text-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__boxes {
+    max-width: 570px;
+  }
+
+  &__bottom-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+
+  &__bottom-item {
+    max-width: 370px;
+    margin: 0 15px;
+  }
+
+  &__bottom-img {
+    width: 370px;
+    height: 195px;
+    object-fit: cover;
+    transition: filter 0.8s;
+
+    &:hover {
+      filter: grayscale(100%);
+    }
+  }
+
+  &__bottom-title {
+    font-size: 20px;
+    font-weight: 400;
+    color: #222;
+    margin-bottom: 15px;
+  }
+
+  &__bottom-box {
+    border: 1px solid $border;
+    padding: 20px;
+    text-align: center;
+  }
+}
