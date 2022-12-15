@@ -1,0 +1,32 @@
+.ask-question {
+  padding: 45px 0;
+  background-color: $accent;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__text {
+    font-size: 22px;
+    color: #fff;
+  }
+
+  &__link {
+    display: block;
+    padding: 13px 40px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: color 0.5s, background-color 0.5s ease 0s;
+
+    &:hover {
+      background-color: #fff;
+      color: $accent;
+    }
+  }
+}

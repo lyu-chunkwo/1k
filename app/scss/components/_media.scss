@@ -231,6 +231,11 @@
     margin-bottom: 10px;
   }
 
+  .header__page-title {
+    font-size: 36px;
+    text-align: center;
+  }
+
   //!welcome
   .welcome {
     padding: 50px 0;
@@ -311,6 +316,14 @@
     &:last-child {
       margin-bottom: 0;
     }
+  }
+
+  .ask-question__inner {
+    flex-direction: column;
+  }
+
+  .ask-question__text {
+    margin-bottom: 20px;
   }
 }
 
@@ -493,6 +506,15 @@
     &:last-child {
       margin-bottom: 0;
     }
+  }
+
+  //! ask-question
+  .ask-question__text {
+    font-size: 16px;
+  }
+
+  .ask-question__link {
+    padding: 8px 20px;
   }
 }
 
