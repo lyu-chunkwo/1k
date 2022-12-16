@@ -13,7 +13,77 @@
 
 <body class="scroll">
 
-  @include('partials/header-page.html')
+  <header class="header">
+    <div class="header__image-box" style="background-image: url(images/slider/1.jpg)">
+      <h2 class="header__page-title">Первый жилищный</h2>
+    </div>
+
+    <div class="header__bottom">
+      <div class="container">
+        <div class="header__bottom-box">
+          <div class="header__breadcrumbs">
+            <ul class="header__breadcrumbs-items">
+              <li class="header__breadcrumbs-item">
+                <a class="header__breadcrumbs-link" href="#">Первый жилищный</a>
+              </li>
+              <li class="header__breadcrumbs-item">
+                <a class="header__breadcrumbs-link" href="#">О кооперативе</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="header__share">
+            <ul class="header__share-list">
+              <li class="header__share-item">
+                <a href="#" class="header__share-link header__share-link--vk">
+                  <img class="header__share-img" src="images/share/vk.png" alt="vk">
+                </a>
+              </li>
+              <li class="header__share-item">
+                <a href="#" class="header__share-link header__share-link--ok">
+                  <img class="header__share-img" src="images/share/ok.png" alt="ok">
+                </a>
+              </li>
+              <li class="header__share-item">
+                <a href="#" class="header__share-link header__share-link--tvitter">
+                  <img class=" header__share-img" src="images/share/twitter.png" alt="twitter">
+                </a>
+                </a>
+              </li>
+              <li class="header__share-item">
+                <a href="#" class="header__share-link header__share-link--viber">
+                  <img class="header__share-img" src="images/share/viber.png" alt="viber">
+                </a>
+              </li>
+              <li class="header__share-item">
+                <a href="#" class="header__share-link header__share-link--skype">
+                  <img class="header__share-img" src="images/share/skype.png" alt="skype">
+                </a>
+              </li>
+              <li class="header__share-item">
+                <a href="#" class="header__share-link header__share-link--telegram">
+                  <img class="header__share-img" src="images/share/telegram.png" alt="telegram">
+                </a>
+              </li>
+              <li class="header__share-item">
+                <a href="#" class="header__share-link header__share-link--wa">
+                  <img class="header__share-img" src="images/share/whatsapp.png" alt="whatsapp">
+                </a>
+              </li>
+              <li class="header__share-item">
+                <a href="#" class="header__share-link header__share-link--mail">
+                  <img class="header__share-img" src="images/share/mailru.png" alt="mailru">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    @include('partials/header-page.html')
+
+  </header>
 
   <main class="main">
     @include('partials/welcome.html')

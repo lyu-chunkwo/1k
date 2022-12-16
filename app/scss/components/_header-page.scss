@@ -9,6 +9,10 @@
     align-items: center;
     position: relative;
 
+    &--stages {
+      height: 52vh;
+    }
+
     &::before {
       content: "";
       position: absolute;
@@ -27,6 +31,13 @@
     color: #fff;
     z-index: 2;
     @extend %poppins-bold-700;
+    padding: 0 15px;
+
+    &--stages {
+      max-width: 1170px;
+      width: 100%;
+      text-align: center;
+    }
   }
 
   &__bottom {
