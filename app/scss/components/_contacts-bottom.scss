@@ -1,0 +1,67 @@
+.contacts-bottom {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__form-inner {
+    max-width: 770px;
+    width: 100%;
+    margin-bottom: 80px;
+  }
+
+  &__form-box {
+    margin-bottom: 25px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid $border;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 70px;
+      height: 1px;
+      background-color: $accent;
+      bottom: -1px;
+      left: -1px;
+    }
+  }
+
+  &__inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__input {
+    max-width: 370px;
+    width: 100%;
+    padding: 13px 20px;
+    border: 1px solid $border;
+
+    &::placeholder {
+      color: #c2c2c2;
+    }
+  }
+
+  &__msg {
+    width: 100%;
+    min-height: 120px;
+    padding: 13px 20px;
+    border: 1px solid $border;
+    resize: none;
+    margin-bottom: 25px;
+
+    &::placeholder {
+      color: #c2c2c2;
+    }
+  }
+}
