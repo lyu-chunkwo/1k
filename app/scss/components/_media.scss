@@ -11,7 +11,7 @@
     margin: 0 auto;
   }
 
-  .about__promotion-item {
+  .promotion__item {
     margin-bottom: 20px;
 
     &:last-child {
@@ -191,6 +191,19 @@
   .program__aside-doc {
     order: 3;
   }
+
+  //! guarantee
+  .guarantee__inner {
+    flex-direction: column;
+  }
+
+  .guarantee__content {
+    max-width: 100%;
+  }
+
+  .guarantee__img {
+    margin: 0 auto 25px;
+  }
 }
 
 @media (max-width: 1122px) {
@@ -360,6 +373,15 @@
   .program {
     padding-bottom: 50px;
   }
+
+  //! guarantee
+  .guarantee {
+    padding: 30px 0 50px;
+  }
+
+  .guarantee__inner {
+    margin-bottom: 50px;
+  }
 }
 
 @media (max-width: 864px) {
@@ -481,6 +503,12 @@
 
   .program__manager-box {
     margin-bottom: 20px;
+  }
+
+  //! guarantee
+  .guarantee__img {
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -696,6 +724,15 @@
   }
 
   .program__passport-box {
+    margin-bottom: 30px;
+  }
+
+  //! guarantee
+  .guarantee {
+    padding: 30px 0 30px;
+  }
+
+  .guarantee__inner {
     margin-bottom: 30px;
   }
 }

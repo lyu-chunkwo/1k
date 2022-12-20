@@ -7,15 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="favicon.png" type="image/x-icon" />
   <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
-  <title>Программа Доступное жилье</title>
+  <title>Требования к недвижимости</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="scroll">
   <header class="header">
-    <div class="header__image-box" style="background-image: url(images/slider/1.jpg)">
+    <div class="header__image-box" style="background-image: url(images/faq/header-bg.jpg)">
       <h2 class="header__page-title header__page-title--pages">
-        Доступное жилье от кооператива Первый Жилищный
+        Гарантии и преимущества кооператива Первый Жилищный
       </h2>
     </div>
 
@@ -28,7 +28,7 @@
                 <a class="header__breadcrumbs-link" href="#">Первый жилищный</a>
               </li>
               <li class="header__breadcrumbs-item">
-                <a class="header__breadcrumbs-link" href="#">Доступное жилье</a>
+                <a class="header__breadcrumbs-link" href="#">Гарантии и преимущества</a>
               </li>
             </ul>
           </div>
@@ -87,7 +87,10 @@
   </header>
   <main class="main">
 
-    @include('partials/accessible-program.html')
+    @include('partials/guarantee.html')
+    @include('partials/terms.html')
+    @include('partials/contacts-section.html')
+    @include('partials/ask-question.html')
 
   </main>
 

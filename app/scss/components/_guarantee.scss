@@ -1,0 +1,51 @@
+.guarantee {
+  padding: 40px 0 130px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 130px;
+  }
+
+  &__content {
+    max-width: 770px;
+  }
+
+  &__img {
+    width: 770px;
+    height: 371px;
+    object-fit: cover;
+    margin-bottom: 25px;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    color: $accent;
+  }
+
+  &__text {
+    p {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__item {
+    margin-bottom: 5px;
+    text-indent: 18px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 17px;
+      height: 15px;
+      left: 0;
+      top: 4px;
+      background-image: url(../images/svg-sprite/sprite.svg#angle-right-red);
+    }
+  }
+
+  &__aside {
+    margin-right: 20px;
+  }
+}
