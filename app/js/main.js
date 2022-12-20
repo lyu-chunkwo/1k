@@ -95,7 +95,7 @@ $(function () {
 
 
   $(".accordion__content").css("display", "none");
-  $(".accordion__title-box").click(function () {
+  $(".accordion__title-box").on('click', function () {
     $(".accordion__title-box").not(this).removeClass("open");
     $(".accordion__title-box").not(this).next().slideUp(300);
     $(this).toggleClass("open");
@@ -103,7 +103,7 @@ $(function () {
   });
 
 
-  $(document).scroll(function () {
+  $(document).on('scroll', function () {
     var scrollTop = $(window).scrollTop();
     console.log(scrollTop);
     if (scrollTop >= 50) {
@@ -115,7 +115,7 @@ $(function () {
   });
 
 
-  $(document).scroll(function () {
+  $(document).on('scroll', function () {
     var scrollTop = $(window).scrollTop();
     console.log(scrollTop);
     if (scrollTop >= 750) {

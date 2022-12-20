@@ -169,6 +169,28 @@
       margin-bottom: 0;
     }
   }
+
+  //! accumulative
+  .program__inner {
+    flex-direction: column;
+  }
+
+  .program__content {
+    max-width: 100%;
+  }
+
+  .program__img {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .program__aside {
+    align-items: flex-start;
+  }
+
+  .program__aside-doc {
+    order: 3;
+  }
 }
 
 @media (max-width: 1122px) {
@@ -333,6 +355,11 @@
   .contacts {
     padding: 50px 0;
   }
+
+  //! program
+  .program {
+    padding-bottom: 50px;
+  }
 }
 
 @media (max-width: 864px) {
@@ -429,6 +456,31 @@
   .requirement__img {
     width: 100%;
     height: 100%;
+  }
+
+  //! program
+  .program__img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .program__passport-content {
+    &--conditions {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  .program__passport-img {
+    margin-bottom: 20px;
+  }
+
+  .program__passport-conditions {
+    order: 2;
+  }
+
+  .program__manager-box {
+    margin-bottom: 20px;
   }
 }
 
@@ -627,6 +679,24 @@
   //!  .contacts
   .contacts {
     padding: 30px 0;
+  }
+
+  //! program
+  .program__passport-item {
+    flex-direction: column;
+
+    p {
+      max-width: 100%;
+    }
+  }
+
+  //! program
+  .program {
+    padding: 30px 0 10px;
+  }
+
+  .program__passport-box {
+    margin-bottom: 30px;
   }
 }
 

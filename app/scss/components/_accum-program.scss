@@ -1,0 +1,157 @@
+.program {
+  padding: 40px 0 70px;
+
+  &__aside {
+    margin-right: 20px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    max-width: 770px;
+  }
+
+  &__img {
+    width: 770px;
+    height: 370px;
+    object-fit: cover;
+    margin-bottom: 25px;
+  }
+
+  &__text-title {
+    color: $accent;
+    margin-bottom: 15px;
+
+    &--box {
+      color: $text;
+      margin-bottom: 5px;
+    }
+  }
+
+  &__text-box {
+    margin-bottom: 30px;
+  }
+
+  &__text-item {
+    text-indent: 20px;
+    margin-bottom: 5px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 17px;
+      height: 15px;
+      left: 0;
+      top: 4px;
+      background-image: url(../images/svg-sprite/sprite.svg#angle-right-red);
+    }
+  }
+
+  &__passport-box {
+    margin-bottom: 60px;
+  }
+
+  &__passport-title {
+    font-size: 24px;
+    font-weight: 400;
+    color: #222;
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid $border;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 70px;
+      height: 1px;
+      left: 0;
+      bottom: -1px;
+      background-color: $accent;
+    }
+  }
+
+  &__passport-content {
+    display: flex;
+
+    &--conditions {
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__passport-items {
+    width: 100%;
+
+    &--answer {
+      max-width: 460px;
+      width: 100%;
+    }
+  }
+
+  &__passport-item {
+    margin-bottom: 2px;
+    color: #fff;
+    display: flex;
+
+    p {
+      background-color: $accent;
+      max-width: 310px;
+      width: 100%;
+      padding: 10px;
+
+      &:last-child {
+        max-width: 460px;
+        width: 100%;
+        background-color: $bg;
+        color: $text;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__passport-conditions {
+    max-width: 370px;
+  }
+
+  &__passport-condition {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__passport-img {
+    width: 370px;
+    height: 176px;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+
+  &__link {
+    // display: block;
+    display: inline-block;
+    max-width: 235px;
+    margin: 0 auto;
+  }
+
+  &__accordion {
+    max-width: 100%;
+  }
+
+  &__accordion-container {
+    max-width: 100%;
+  }
+}
