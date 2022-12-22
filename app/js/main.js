@@ -1,6 +1,7 @@
 $(function () {
   $('.header__slider-list').slick({
     fade: true,
+    autoplay: true,
 
     responsive: [
       {
