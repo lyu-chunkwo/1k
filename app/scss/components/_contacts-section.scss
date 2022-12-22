@@ -44,6 +44,7 @@
 
   &__address {
     margin-bottom: 20px;
+    color: #a7a7a7;
   }
 
   &__item {
@@ -51,10 +52,10 @@
   }
 
   &__item-link {
-    color: #fff;
     position: relative;
     padding-left: 40px;
     transition: color 0.5s ease 0s;
+    color: #a7a7a7;
 
     &::before {
       content: "";
@@ -124,6 +125,8 @@
   }
 
   &__form-bottom {
+    color: #a7a7a7;
+
     p {
       position: relative;
       padding-left: 35px;
